@@ -1,0 +1,1 @@
+this is a repo which tracks my study of this book. It contains code, notes and excercises. Notes and excersises are maintained chapter wise.
