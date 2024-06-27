@@ -1,5 +1,5 @@
-## Chapter 2: End-To-End Machine Learning Project
 
+## Chapter 2: End-To-End Machine Learning Project
 Pretend to be a data scientist in a real estate company. 
 
 ### The Steps to build a AI model
@@ -37,9 +37,18 @@ Data includes:
 3. Median Housing Price
 4. etc etc
 
-### Frame The Problem
+### Answer Fundamental Question:
+- what type of supervision to use
+- what type of ML problem is this
+- what learning technique should be used
 
-If i make changes here will it reflect?
+### Selecting a Performance Measure
+
+1. RMSE: Root Mean Squared Error <br>
+    Preferred for Regression Tasks with less outliers 
+    <br> 
+2. MEA: Mean Absolute Error <br>
+    Preferred when there are a lot of outliers
 
 
 
