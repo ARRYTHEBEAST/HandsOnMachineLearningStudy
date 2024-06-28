@@ -51,4 +51,26 @@ Data includes:
     Preferred when there are a lot of outliers
 
 
+### Creating a Test Split
+
+#### Stratified Sampling
+
+``` pd.cut() ```
+
+it creates and income category attribute from the income median column. the income categories are 5 in number and that would be used to do the stratification. 
+
+Furthermore the sklearn library, in the model selection has splitters which can perform stratified splits.
+
+**StratifiedShuffleSplit** :
+This is one of the model which can generate multiple splits
+(fold), which can be used in cross validation.
+
+### EDA Analysis on Housing Data
+
+1. There are mostly numerical features except one categorical feature.
+2. There are few null values in one of the feature
+3. After plotting the histogram we get to know:
+    - The scales are very different
+    - Median house value and housing median age are capped at extreme ends.
+    - The data is skewed right for all features.
 
