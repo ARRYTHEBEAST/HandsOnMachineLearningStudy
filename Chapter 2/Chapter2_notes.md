@@ -88,7 +88,7 @@ Create new features by mixing and matching or doing some changes to the existing
 3. Imputation 
 
 
-> ### Scikit-Learn Design
+> #### Scikit-Learn Design
 > 1. Estimators:
 >Any object that can estimate some parameter based on a dataset. Estimation is performed by 
     ```fit()```
@@ -99,3 +99,17 @@ Create new features by mixing and matching or doing some changes to the existing
 > 4. Inspection:
 > It can access the estimator's hyperparameters and parameters via public instance variables with an underscore suffix.
 
+#### SimpleImputer 
+This is called from scikit-learn it is a transformer cum estimator. the ```fit()``` function is called  to calulate the median or anything according to the 'strategy' that is being used. Then the imputer will impute values in the empty places.
+
+#### OneHotEncoder
+This is used to encode categorical data and convert it to a machine that algo can understand. 
+
+
+#### OneHotEncoder vs Ordinal Encoder
+
+#### OneHotEncoder vs pd.getDummies()
+
+### Feature Scaling
+
+This brings all the numerical attributes to a simmilar scale so that the ML model wont prefer one attribute just becaues it has a higher numerical value. 
