@@ -74,3 +74,28 @@ This is one of the model which can generate multiple splits
     - Median house value and housing median age are capped at extreme ends.
     - The data is skewed right for all features.
 
+### Feature Engineering
+
+Create new features by mixing and matching or doing some changes to the existing features.
+
+
+### Cleaning The Data For Training
+
+**Handling Missing Values**
+
+1. Get rid of the corresponding values
+2. Get rid of the whole feature
+3. Imputation 
+
+
+> ### Scikit-Learn Design
+> 1. Estimators:
+>Any object that can estimate some parameter based on a dataset. Estimation is performed by 
+    ```fit()```
+> 2. Transformers:
+>Something that transforms the dataset. The transformation is done by ```transform()``` or ```fit_transform()``` so that the ```fit()``` and ```transform()``` runs simultaneoulsy.
+> 3. Predictors: 
+> Something that makes prediction, given a dataset. It predicts using the ```predict()``` function. It also has ```score()``` that measures the quality of the prediction.
+> 4. Inspection:
+> It can access the estimator's hyperparameters and parameters via public instance variables with an underscore suffix.
+
