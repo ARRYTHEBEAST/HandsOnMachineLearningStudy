@@ -136,6 +136,22 @@ To do this
 
 ### RBF_Kernel
 
+### Transformed Target Regressor and Inverse Transform:
+
+Using the transformers only the input features have been scaled. Therefore the prediction labes will have to undergo an 'inverse trandform' so that the scaled prediction lables of the model is understandable to us. 
+
+this can be done using ```inverse_transform()``` function from scikit-learn
+
+Moreover, ```TransformedTargetRegressor()``` can also be used from the same library. This applies the scaler and the inverse trandform by itself. 
+
+#### Custon Transformers:
+
+These are needed for:
+1. CleanUp Opertations
+2. Combining Specific Attributes
+
+
+
 
 
 
