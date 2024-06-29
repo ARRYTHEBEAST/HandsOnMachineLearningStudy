@@ -113,3 +113,30 @@ This is used to encode categorical data and convert it to a machine that algo ca
 ### Feature Scaling
 
 This brings all the numerical attributes to a simmilar scale so that the ML model wont prefer one attribute just becaues it has a higher numerical value. 
+
+>#### **Warning** <br>
+>the scalers should always be fit to the training data and never on the test data or any other dataset. After training the scaler, we can just use the ```transform()``` function on the test dataset or the validation dataset or anyother dataset. 
+
+There are two types of scaling:
+1. Min-Max Scaling(Normalization):
+<br>
+Here the data is converted into a range of 0 to 1. This is done by subtracting the min value and divinding by the difference between the min and the max. This is done using Scikit Learn's ```MinMaxScaler()``` transformer. 
+2. Standardization
+<br>
+Here it subtracts the mean calue then divides the result by standard deviation. It is less affected by outliers. This is done by using ```StandardScaler()``` again from scikitlearn. 
+
+#### Heavy-Tail distribution 
+This is when values far from the mean are not expoenetially rare. This time both the feature scaling techinque will squash the valeus into small range. Therefore the Heavy-Tail has to be managed and should be made symmetrical. 
+
+To do this 
+1. we can replace the feature to with heavy tail to the right is to replace the data with square root.
+
+2. Bucketizing:
+    Chopping its distribution into roughly equal-sized buckets.
+
+### RBF_Kernel
+
+
+
+
+
