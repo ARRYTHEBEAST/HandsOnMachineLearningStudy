@@ -150,7 +150,12 @@ These are needed for:
 1. CleanUp Opertations
 2. Combining Specific Attributes
 
+It can be done by writing your own classses transformers. 
 
+>refer the code section
+
+### Transformation Pipelines:
+There are many transformation that need to be done on the data. Now instead of writing each of the transformation by function and calling that function one by one. We just can use sklearn's pipelines which helps us sequence the transformations.
 
 
 
