@@ -157,6 +157,31 @@ It can be done by writing your own classses transformers.
 ### Transformation Pipelines:
 There are many transformation that need to be done on the data. Now instead of writing each of the transformation by function and calling that function one by one. We just can use sklearn's pipelines which helps us sequence the transformations.
 
+### Cross-Validation:
+
+This technique makes n number of 'folds' or n number of different combination of training sets and validation sets. then the model is trained for n number of times using n-1 folds for training and the remaining nth fold for validation. This is repeated n times. 
+
+### FineTuning The Model:
+FineTuning is the process of optimizing the model hyperparameters (HyperParameter Tuning). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
