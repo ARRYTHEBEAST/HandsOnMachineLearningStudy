@@ -164,6 +164,22 @@ This technique makes n number of 'folds' or n number of different combination of
 ### FineTuning The Model:
 FineTuning is the process of optimizing the model hyperparameters (HyperParameter Tuning). 
 
+There are two ways to do this:
+1. Grid Search:
+
+Exploring few combinations. 
+
+2. Random Search:   
+When the hyperparameter search space is large.
+
+### Ensembling The Models:
+This technique combines the models that performs the best. 
+
+
+
+
+
+
 
 
 
