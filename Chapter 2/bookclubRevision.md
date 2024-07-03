@@ -46,5 +46,10 @@ Disadvantage:
 
 Confidence interval is the range within which the values are expected to lie. Lower the RMSE smaller the confidence interval.
 
+>Instead of Mean **squared** error, can we not have some other index, like **cube** or some higher power?
+
+### Train Test Split
+
+When we want to split the data into train and test in an production environemt where the data keeps increasing and the dataset grows. It is necessary always for the same data to be split in the same way. One way to do this is use the index to keep track and other way is to do **hashing**.
 
 
