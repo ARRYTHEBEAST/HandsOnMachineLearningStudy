@@ -52,4 +52,26 @@ Confidence interval is the range within which the values are expected to lie. Lo
 
 When we want to split the data into train and test in an production environemt where the data keeps increasing and the dataset grows. It is necessary always for the same data to be split in the same way. One way to do this is use the index to keep track and other way is to do **hashing**.
 
+#### Stratified Sampling:
+This is really import to do cross validation, and proper validation. 
+
+we just have to stratify with respect to one colunm. That can be the class distrtibution. and that we can create for continious dataset using ```pd.cut()``` we can create multiple bins which will funcitons as our class
+
+### sklearn object design:
+
+Estimators: any object that can estimate using the dataset. Has ```fit()``` method.
+Transformers: any object that can transform the dataset. has ```transform()``` method.
+Predictors: any object that can make predictions on the dataset. has ```predict()``` or ```score()``` methods.
+
+### Imputing the missing or NA values:
+This can be done by ```simpleimputer()``` and by selecting appropriate strategy.
+
+### Encoding Categorical Values:
+
+OneHotEncoder should be used. 
+
+### Custom Transformers (Little Hard):
+
+
+
 
