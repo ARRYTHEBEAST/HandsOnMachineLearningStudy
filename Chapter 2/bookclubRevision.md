@@ -71,7 +71,15 @@ This can be done by ```simpleimputer()``` and by selecting appropriate strategy.
 OneHotEncoder should be used. 
 
 ### Custom Transformers (Little Hard):
+Well its not hard. We just import TransformerMixin and create a class which takes transformerminxin as parameter. the we define a method, called transform, and inside that we write the operation that needs to be performed.
 
+### Pipelines:
+
+They are used to chain preprocessing steps together. 
+
+### ColumnTransformer:
+This is used to combine different pipelines together. 
+ 
 
 
 
