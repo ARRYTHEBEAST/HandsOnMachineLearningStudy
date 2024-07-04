@@ -79,6 +79,10 @@ They are used to chain preprocessing steps together.
 
 ### ColumnTransformer:
 This is used to combine different pipelines together. 
+
+### EDA
+
+
  
 
 
