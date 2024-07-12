@@ -28,3 +28,13 @@ So linear regression can be trained with a closed form solution, This is lnown a
 This is a generic optimization algorithm capable of finding solutions to a wide range of problems. This is an iteration based algorithm. 
 
 First it starts via a random initialization. Then you imporve it gradually by attempting to decrease the cost funciton.
+
+
+### Batch Gradient Descent
+
+To implemet gradient descent you need to compute the cost function with regard to each model parameter (theta).
+This will require me to calculate the 'Partial Derivative'
+
+Then instead of calculating partial derivatives individually of all feature. All the partial derivatives are calculated in one go using a 'gradient vector'.
+
+This formula involves calculations over the full training set at each gradient descent step. 
