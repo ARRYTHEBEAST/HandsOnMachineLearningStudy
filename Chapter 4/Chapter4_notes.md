@@ -14,3 +14,17 @@ In chapter 1 ther was a simple linear regression of life satisfaction:
 
 life_satisfaction = theta0 + theta1 x GDP_per_capita
 
+> learning algorithms will optimize a different loss funcitn during training than the final model's performance measure. 
+
+## Cost Funtion:
+the model will try to minimixe the cost funtion to make sure that the parametrs allow the model to fit the data. 
+
+<br>
+
+### Normal Equatiton
+So linear regression can be trained with a closed form solution, This is lnown as the Normal Equation. This directly gives the values of both the parameters.
+
+### Gradient Descent:
+This is a generic optimization algorithm capable of finding solutions to a wide range of problems. This is an iteration based algorithm. 
+
+First it starts via a random initialization. Then you imporve it gradually by attempting to decrease the cost funciton.
