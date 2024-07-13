@@ -55,4 +55,33 @@ learning curves plots the value of training and validation errors iteratively in
 This is done by either partial_fit() or by training the model with increaseing the data iteratively. 
 
 ```learning_curve()```
+## Bias/Variance trade off
 
+The model's generalization error can be expressed as teh sum of three erros:
+
+Bias:
+This is due to wrong assumptions, such as assuming the data is linear. 
+
+Variance:
+Models excessive sensitivity to small variations in the training data. 
+
+Irreducible error:
+THis is due to the noisiness of the data. 
+
+Increasing a models complexity will increase its variance and resuce its bias. Reducing a models complexity will increase the bias and reduce its variance. This is the trade off.
+
+## Regularized Linear Models:
+A good way to handle overfitting is to regularize the modle. 
+
+Regularization of polynomial models is to reduce the number of polynomial degree.
+
+
+### Ridge Regression:
+This is the regularixed version of linear regression. The regularization term added to the MSE(cost function) forces the learning to fit the data while keeping the weights small. 
+
+this used the l2 norm
+
+### Lasso Regression:
+Least absolute shrinkage and selection operator. 
+
+This uses the l1 norm
