@@ -49,3 +49,10 @@ This picks up ransom instance in the training set at every step and computes the
 But due to the stochastic(random) nature. The regularity of the algotithm is very less. The model will not converge at a single point and it will keep jittering at the minima.
 
 Due to this nature however SGD has more chances to escape the local minima and find the global minima. 
+
+## Learning Curves:
+learning curves plots the value of training and validation errors iteratively in some time intervals. 
+This is done by either partial_fit() or by training the model with increaseing the data iteratively. 
+
+```learning_curve()```
+
