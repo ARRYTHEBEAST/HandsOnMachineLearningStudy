@@ -37,4 +37,15 @@ This will require me to calculate the 'Partial Derivative'
 
 Then instead of calculating partial derivatives individually of all feature. All the partial derivatives are calculated in one go using a 'gradient vector'.
 
-This formula involves calculations over the full training set at each gradient descent step. 
+This formula involves calculations over the full training set at each gradient descent.
+
+### Mini-Batch Gradient Descent
+This is simmilar in fucntion to batch gradient descent, but here instead of using the full training dataset only the specified amount of data is used. This is the unique difference in this and the previous techniques. 
+
+### Stochastic Gradient Descent:
+This implementaion of gradient descent involves using only one data point and estimating.
+This picks up ransom instance in the training set at every step and computes the gradients based only on that single instance.
+
+But due to the stochastic(random) nature. The regularity of the algotithm is very less. The model will not converge at a single point and it will keep jittering at the minima.
+
+Due to this nature however SGD has more chances to escape the local minima and find the global minima. 
