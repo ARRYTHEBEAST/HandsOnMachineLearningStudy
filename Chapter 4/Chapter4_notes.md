@@ -60,10 +60,12 @@ This is done by either partial_fit() or by training the model with increaseing t
 The model's generalization error can be expressed as teh sum of three erros:
 
 Bias:
-This is due to wrong assumptions, such as assuming the data is linear. 
+This is due to wrong assumptions, such as assuming the data is linear.
+Good Model Should Have low bias. 
 
 Variance:
-Models excessive sensitivity to small variations in the training data. 
+Models excessive sensitivity to small variations in the training data.
+Good Model should have low variance. 
 
 Irreducible error:
 THis is due to the noisiness of the data. 
@@ -75,13 +77,38 @@ A good way to handle overfitting is to regularize the modle.
 
 Regularization of polynomial models is to reduce the number of polynomial degree.
 
-
 ### Ridge Regression:
 This is the regularixed version of linear regression. The regularization term added to the MSE(cost function) forces the learning to fit the data while keeping the weights small. 
 
-this used the l2 norm
+The added parameter: ```lambda*x*sqr(Slope)```
+
+
+this used the l2 norm.
+
 
 ### Lasso Regression:
 Least absolute shrinkage and selection operator. 
 
+The added parameter: ```|lambda|*x*sqr(Slope)```
+This also helps to do feature selection.
 This uses the l1 norm
+Lasso performs well when there are many number of features.
+
+### Elastic Net Regression
+
+It is a middle ground between ridge and lasso.
+The added parameter, term is weighted sum of both ridge and lasso regularization terms. and the mix ratio is controlable. 'r'
+
+
+### When to use what:
+
+1. Only regression is never reccomended, some form of regularization is reccomended. 
+2. Ridge is a good default
+3. If you suspect few features are not useful use Lasso.
+4. Elastic Net is preffered over Lasso. 
+
+### Early Stopping:
+Stop straining as soon as the validation error reaches a minimum.
+
+
+
