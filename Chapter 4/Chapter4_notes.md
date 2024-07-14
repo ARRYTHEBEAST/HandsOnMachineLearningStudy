@@ -110,5 +110,8 @@ The added parameter, term is weighted sum of both ridge and lasso regularization
 ### Early Stopping:
 Stop straining as soon as the validation error reaches a minimum.
 
+## Logistic Regression
+
+
 
 
