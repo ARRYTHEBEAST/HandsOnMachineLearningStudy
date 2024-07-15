@@ -112,6 +112,9 @@ Stop straining as soon as the validation error reaches a minimum.
 
 ## Logistic Regression
 
+This is a regression model which is used for classification tasks.
+d
+
 
 
 
