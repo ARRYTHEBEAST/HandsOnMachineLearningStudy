@@ -113,8 +113,11 @@ Stop straining as soon as the validation error reaches a minimum.
 ## Logistic Regression
 
 This is a regression model which is used for classification tasks.
-d
 
+How does this work?
+
+    Model computes a weighted sum of the input features, however it outputs a the logistic of this result.
+    
 
 
 
