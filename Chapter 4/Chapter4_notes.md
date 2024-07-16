@@ -117,7 +117,31 @@ This is a regression model which is used for classification tasks.
 How does this work?
 
     Model computes a weighted sum of the input features, however it outputs a the logistic of this result.
-    
+
+### Softmax regression:
+This means generalizing a classification logistic regression for multuple classes.
+
+This used 'Cross Entropy' as its cost funtion. 
+
+## Summary
+
+various ways to train linear models
+1. closed form equations
+2. gradient descent
+    1. Batch
+    2. Minibatch
+    3. Stochastic
+
+How to regularize the linear models:
+1. Ridge
+2. Lasso
+
+How to plot learning curvves and analyze them and how to implement early stopping.
+
+Logistic Regression and Softmax regression.
+
+
+
 
 
 
