@@ -22,3 +22,14 @@ gaussian RBF, adds naother feature to check how much each intance resembles a la
 
 
 > LinearSVC is much faster than SVC(kernel='linear')
+
+### SVM Regression
+SVR unlike SVC tries to fit the maximum possible instances on the street unlike SVC which tries to not fit any instances on the street.
+
+```
+svm_reg = make_pipeline(StandardScaler(), LinearSVR(epsilon=0.5))
+```
+
+#### NON linear Regression:
+
+Again here too a poly kernerl can be used.
