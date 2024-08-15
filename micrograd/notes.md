@@ -1,0 +1,2 @@
+# Micrograd
+Micrograd is a autograd engine. That means it implements backpropagation. This is a algorithm which allows you to evaluate the gradient of a loss function with respect to weights of a neural network. This allows us to iteratively tune the weights to minimize the loss funcion to improve accuracy.
