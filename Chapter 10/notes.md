@@ -41,5 +41,12 @@ Each mini batch enters the network through the input later. The algo then comput
 
 Next, the algo measures the networks output error( using loss function)
 
+Then it computes how much each output bias ans each connection to the output later contributed to the error. This is done analytically by applying the chain rule.
+
+Algo then measures how much of these error contributions came from each connection in the layer below again using the chain rule working backward until it reaches the input layer. 
+This reverse pass measures the error gradiernt across all the connection weights and biases in the network by propagating the error gradiaent backward through the network.
+
+Finally the algo perfroms a gradient descent step to tweak all the connection weights in the netweok using the error gradients it just computed. 
+
 
 
