@@ -85,3 +85,7 @@ X.reshape(-1,784)
 #### Compiling the model
 The loss function and the optimizer needs to be specified after calling the ```compile()`` method.
 
+#### Hyperparameter Tuning
+
+The model can be retrained if it has not converged yet.
+Learning rate can be tuned. Then a different optimizer can be used.Then number of layers, number of neurons per layer, types of activation funcitons for each layer. The batch size. 
