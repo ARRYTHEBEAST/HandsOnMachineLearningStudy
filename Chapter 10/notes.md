@@ -70,9 +70,10 @@ and for multilabel classificaiton sigmoid activation function should be used.
 
 
 ### Implementing MLP with keras
-
+#### Sequential API
 
 ### Describing the Architecture of the model
+
 
 1. Create a Sequential model/ this is a keras model for nn that is composed of a single stack of layers connectied sequentially. 
 2. The first(Input) layer is created. The input shape is the shape of the instances not the batch size.
@@ -89,3 +90,6 @@ The loss function and the optimizer needs to be specified after calling the ```c
 
 The model can be retrained if it has not converged yet.
 Learning rate can be tuned. Then a different optimizer can be used.Then number of layers, number of neurons per layer, types of activation funcitons for each layer. The batch size. 
+
+
+#### Functional API
