@@ -49,4 +49,31 @@ This reverse pass measures the error gradiernt across all the connection weights
 Finally the algo perfroms a gradient descent step to tweak all the connection weights in the netweok using the error gradients it just computed. 
 
 
+### Regression MLP Architecture
+
+Hyperparameter              Typical Value
+Hidden Layers               Depends on the problem, but 1-5
+neurons per H-layer         usually 10-100
+output neurons              1 per prediction dimension
+Hidden Activation Funciton  ReLU
+Output Activation Function  NONE, ReLU or Softplus or Sigmoid/tanh
+Loss Function               MSE or Huber(if outliers)
+
+
+#### Classification MLP
+For binary classification problem a single output neuron is needed using the sigmoid activation function: the output will be 0 or 1. 
+
+For multiclass classification softmax activation function should be used so that the output layer outputs all add to 1. 
+
+and for multilabel classificaiton sigmoid activation function should be used. 
+
+
+
+### Implementing MLP with keras
+
+
+
+
+
+
 
