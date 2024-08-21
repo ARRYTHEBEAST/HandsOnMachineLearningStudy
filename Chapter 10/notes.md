@@ -72,8 +72,16 @@ and for multilabel classificaiton sigmoid activation function should be used.
 ### Implementing MLP with keras
 
 
+### Describing the Architecture of the model
 
+1. Create a Sequential model/ this is a keras model for nn that is composed of a single stack of layers connectied sequentially. 
+2. The first(Input) layer is created. The input shape is the shape of the instances not the batch size.
+3. Then Flatten layer is added to convert each image into a 1D array. If it receives input of X it computes
+X.reshape(-1,784)
+4. Then dense layer is added with 300 neurons. This uses relu 
+5. Then a second dense layer is added with 100 neurons
+6. Finally the output (dense) layer is added with 10 neurons one per class using the softmax activation fucntion becuase the classes are exclusive.
 
-
-
+#### Compiling the model
+The loss function and the optimizer needs to be specified after calling the ```compile()`` method.
 
