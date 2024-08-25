@@ -93,3 +93,27 @@ Learning rate can be tuned. Then a different optimizer can be used.Then number o
 
 
 #### Functional API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
