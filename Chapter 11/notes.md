@@ -30,6 +30,12 @@ However, BN also addes some complexity to the model. THere is a runtinme penalty
 
 > The training time is slow because each epoch takes more time however the convergence is faster so it will take fewer epochs to reach the same perfomance. ALl in all the wall time is usually shorter. 
 
+BN is omitted in the architecture diagrams because its assumed that it is added after every layer. 
+
+### Gradient Clipping:
+
+This technique too mitigate the exploding gradient problem. It clip the gradient during backpropagation so that they never exceed some threshold. This is used in RNN's
+
 
 
 
