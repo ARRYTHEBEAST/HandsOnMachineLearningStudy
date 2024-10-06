@@ -34,8 +34,16 @@ BN is omitted in the architecture diagrams because its assumed that it is added 
 
 ### Gradient Clipping:
 
-This technique too mitigate the exploding gradient problem. It clip the gradient during backpropagation so that they never exceed some threshold. This is used in RNN's
+This technique too mitigate the exploding gradient problem. It clip the gradient during backpropagation so that they never exceed some threshold. This is used in RNN's. This will clop every component of the gradient vector between -1 and 1. This means that all the partial dericatives of the loss. This threshold is a tunable hyperparameter. 
 
+### Reusing Pretrained Layers
+
+this is also called transfer learning. If you can access a DNN then the layers can be used. the more similar the tasks are the more layers should be shared. For very similar tasks use all the hiden-layer and just replace the output layer. 
+
+1. Freeze all the resued layers so that theur weights become non trainable so that gradient descent won't modify them and they will remain fixed. then if the performance is low then try unfreezong some of the layers to that backprop tweaks them.
+
+Well turns out transfer learning does not work....
+However it does work! but it works when with large dense networks not with small dense networks.
 
 
 
