@@ -106,6 +106,18 @@ Dropout slows down the convergence but often results in a better model when tune
 this is a better droput, somethign something.
 
 ## Summary and Practical Guidelines.
+Default DNN
+HyperParameter              Default Value                                   For self normalizing
+1. Kernel Initializer       HE initialization                               LeCun Initialization
+2. Activation Funnction     ReLU if shallow, Swish if deep                  SELU
+3. Normalization            None if shallow, batch norm if deep             None
+4. Regularization           Early Stopping; weight decay if needed          Alpha dropout
+5. Optimizer                nesterov accelerated gradients or AdamW         Nesterov Accelerated Gradients
+6. Learning rate Schedule   Performance scheduling or 1 cycle schedule      Performace Scheduling or 1cycle
+
+
+
+
 
 
 
