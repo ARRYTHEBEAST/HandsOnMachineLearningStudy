@@ -35,4 +35,9 @@ class CNN(nn.Module):
 
 model = CNN()
 
+class ResidualUnit(nn.Module):
+    def __init__(self, filters, strides=1, activation='relu', **kwargs):
+        super().__init__(**kwargs)
+        
+
 
